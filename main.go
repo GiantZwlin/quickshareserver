@@ -25,7 +25,7 @@ func main() {
 	e.GET("/gists",getGists)
 	e.POST("/gists",saveGist)
 	e.DELETE("gists/:id",delGist)
-	e.Logger.Fatal(e.Start(":1323"))
+	e.Logger.Fatal(e.Start(":80"))
 }
 
 func getGists(c echo.Context) error{
